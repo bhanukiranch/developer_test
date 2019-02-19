@@ -84,13 +84,35 @@ class Chicken extends Bird  {
 		this.sound=new CluckSound();
 		
 	}
-	
+	Chicken(Sound sound)
+	{
+		super();
+		this.fly=new ICannotFly();
+		this.sound=sound;
+		
+	}
 	void doSound()
 	{
 		sound.sound();
 	}
 
 
+}
+
+class Rooster extends Animal{
+	
+	Chicken chicken;
+	
+	Rooster()
+	{
+		chicken=new Chicken(new CockdoodleSound());
+		
+	}
+	
+	void doSound()
+	{
+		chicken.doSound();
+	}
 }
 
 public class Solution {

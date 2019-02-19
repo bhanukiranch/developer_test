@@ -1,5 +1,7 @@
 package com.java.developer.test;
 
+import com.developer.java.SoundBehaviour;
+
 interface Sound {
 	
 	void sound();
@@ -29,6 +31,8 @@ class CluckSound implements Sound
 	
 }
 
+
+
 class ICannotSound implements Sound {
 
 
@@ -37,4 +41,13 @@ class ICannotSound implements Sound {
 
 	}
 
+}
+
+class  CockdoodleSound implements Sound
+{
+	public void sound() {
+		System.out.println("Cock-a-doodle-doo");
+		
+	}
+	
 }

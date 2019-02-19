@@ -29,4 +29,13 @@ public class SolutionTest {
 		
 	}
 	
+	@Test
+	public void testRooster() {
+		System.out.println("A Rooster \n");
+		Rooster rooster = new Rooster();
+		rooster.doSound();
+		rooster.chicken.fly();
+		System.out.println("\n");
+	}
+	
 }
