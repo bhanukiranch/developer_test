@@ -5,12 +5,15 @@ class Animal {
 	Walk walk;
 	Fly fly;
 	Sing sing;
+	Sound sound;
+	Swim swim;
 	
 	Animal()
 	{
 		this.walk=new ICanWalk();
 		this.sing=new ICannotSing();
 		this.fly=new ICannotFly();
+		this.sound = new ICannotSound();
 
 	}
 	
@@ -49,6 +52,45 @@ class Bird extends Animal {
 		sing.sing();
 	}
 	
+}
+
+class Duck extends Bird {
+	
+	Duck()
+	{
+		super();
+		super.swim=new ICanSwim();
+		super.sound=new QuackSound();	
+	}
+
+	void doSound()
+	{
+		sound.sound();
+	}
+
+	void doSwim()
+	{
+		swim.swim();
+	}
+
+}
+
+class Chicken extends Bird  {
+	
+	Chicken()
+	{
+		super();
+		this.fly=new ICannotFly();
+		this.sound=new CluckSound();
+		
+	}
+	
+	void doSound()
+	{
+		sound.sound();
+	}
+
+
 }
 
 public class Solution {

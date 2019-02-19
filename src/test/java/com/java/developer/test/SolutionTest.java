@@ -11,6 +11,22 @@ public class SolutionTest {
 		bird.walk();
 		bird.fly();
 		bird.sing();
+		System.out.println("\n");
+	}
+	
+	@Test
+	public void testBirdDuckChicken() {
+		System.out.println("A Duck \n");
+		Duck duck = new Duck();
+		duck.doSound();
+		duck.doSwim();
+		System.out.println("\n");
+		System.out.println("A Chicken \n");
+		Chicken chicken = new Chicken();
+		chicken.doSound();
+		chicken.fly();
+		System.out.println("\n");
+		
 	}
 	
 }
