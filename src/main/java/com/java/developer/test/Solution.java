@@ -133,7 +133,6 @@ class Parrot extends Bird {
 
 class Fish extends Animal
 {
-
 	Fish()
 	{
 		this.walk=new ICannotWalk();
