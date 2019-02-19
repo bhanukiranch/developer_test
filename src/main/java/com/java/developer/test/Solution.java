@@ -115,6 +115,22 @@ class Rooster extends Animal{
 	}
 }
 
+class Parrot extends Bird {
+	
+	Sound sound;
+	
+	Parrot (){}
+	Parrot(Sound sound)
+	{
+		this.sound=sound;
+	}
+	
+	void doSound()
+	{
+		sound.sound();
+	}
+}
+
 public class Solution {
 
 	public static void main(String[] args) {
