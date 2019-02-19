@@ -131,6 +131,33 @@ class Parrot extends Bird {
 	}
 }
 
+class Fish extends Animal
+{
+
+	Fish()
+	{
+		this.walk=new ICannotWalk();
+		this.sing=new ICannotSing();
+		this.swim=new ICanSwim();
+		
+	}
+	
+	void doWalk()
+	{
+		walk.walk();
+	}
+	void doSing()
+	{
+		sing.sing();
+	}
+	void doSwim()
+	{
+		swim.swim();
+	}
+	
+	
+}
+
 public class Solution {
 
 	public static void main(String[] args) {
