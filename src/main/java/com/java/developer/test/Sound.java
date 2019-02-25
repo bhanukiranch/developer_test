@@ -72,3 +72,18 @@ class  MeowSound implements Sound
 	}
 	
 }
+
+class CustomSound implements Sound
+{
+
+	String sound;
+	CustomSound(String sound)
+	{
+		this.sound=sound;
+	}
+	public void sound() {
+		System.out.println(sound);
+		
+	}
+	
+}
