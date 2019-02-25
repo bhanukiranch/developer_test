@@ -157,6 +157,34 @@ class Fish extends Animal
 	
 }
 
+class Shark extends Fish 
+{
+	
+	void display()
+	{
+		System.out.println(" large and grey");
+	}
+	 
+	void joke(){
+		System.out.println(" can make Joke");
+	}
+}
+
+
+class Clownfish extends Fish 
+{
+	
+	void display()
+	{
+		System.out.println(" small and colourful (orange)");
+	}
+	
+	void eat()
+	{
+		System.out.println("can eat other fishes");
+	}
+}
+
 public class Solution {
 
 	public static void main(String[] args) {
