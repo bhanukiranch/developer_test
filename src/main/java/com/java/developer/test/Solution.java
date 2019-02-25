@@ -196,6 +196,20 @@ class Dolhpin extends Animal
 	
 }
 
+class Butterfly extends Bird
+{
+	Butterfly()
+	{
+		super(new ICanFly(), new ICannotSing());
+	}
+	
+	void toCaterPillar()
+	{
+		this.sing=new ICannotSing();
+		this.fly=new ICannotFly();
+	}
+}
+
 public class Solution {
 
 	public static void main(String[] args) {
